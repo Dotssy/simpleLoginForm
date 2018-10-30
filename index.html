@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Form</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="form-wrap">
+			<div class="greet">
+				<div class="greet-text">
+					<h2>Hello, stranger</h2>
+					<hr>
+					<p>In our portal you can handle all your<br>
+				   	   project in the easiest of possible ways,<br> 
+				   	   and keep it under your total control.</p>
+				</div>
+			</div>
+			<div class="registration">
+				<div id="formbox-content">
+					<h3>Registration</h3>
+					<p>Fill all the fields below.</p>
+					<form id='form'>
+						<div id="email-container">
+							<input id="email" type="text" name="email" placeholder="Enter your email">
+						</div>
+						<div id="password-container">
+							<input id="password" type="password" name="password" placeholder="Password">
+						</div>
+						<button id="submit" type="submit" name="submit" form='form'>
+							<img src="img/padlock.png" alt="Lock">Create Account
+						</button> 
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="js/index.js"></script>
+	</body>
+</html>

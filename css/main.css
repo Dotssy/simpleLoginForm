@@ -1,0 +1,231 @@
+/* Main Style */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background-color: #70b6e2;
+	display: flex;
+	height: 1000px;
+}
+
+.focus-message {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #70b6e2;
+	position: absolute;
+	top: -19px;
+}
+
+.error-message {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: red;
+	position: absolute;
+	top: -19px;
+}
+
+.error input {
+	border-color: red;
+}
+
+#email-container,
+#password-container {
+	display: flex;
+	flex-basis: 100%;
+	position: relative;
+}
+
+
+/* Form */
+
+.form-wrap {
+	display: flex;
+	flex-basis: 865px;
+	justify-content: center;
+	margin: auto;
+	-webkit-box-shadow: 3px 4px 19px -2px rgba(0,0,0,0.22);
+	-moz-box-shadow: 3px 4px 19px -2px rgba(0,0,0,0.22);
+	box-shadow: 3px 4px 19px -2px rgba(0,0,0,0.22);
+}
+
+.greet {
+	height: 562px;
+	position: relative;
+	flex-basis: 356px;
+	display: flex;
+	justify-content: center;
+}
+
+.greet::after {
+  content: "";
+  background: #005c8a url(../img/greet-bg.png) no-repeat center center;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.greet-text {
+	margin: auto;
+	padding: 0 10px;
+}
+
+.greet-text h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 19px;
+}
+
+.greet-text hr {
+	height: 4px;
+	width: 92px;
+	background: #ffffff;
+}
+
+.greet-text p {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	margin-top: 38px;
+}
+
+.registration {
+	display: flex;
+	justify-content: center;
+	flex-basis: 505px;
+	padding: 0 5px;
+	background: #ffffff;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-box-shadow: 3px 4px 19px -2px rgba(0,0,0,0.22);
+	-moz-box-shadow: 3px 4px 19px -2px rgba(0,0,0,0.22);
+	box-shadow: 3px 4px 19px -2px rgba(0,0,0,0.22);
+}
+
+#formbox-content {
+	margin: auto;
+	flex-basis: 300px;
+}
+
+#formbox-content h3 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 19px;
+	color: #70b6e2;
+	margin-bottom: 27px;
+}
+
+#formbox-content p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #616161;
+	margin-bottom: 27px;
+}
+
+#form {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+form input {
+	border: 1px solid #ced8ea;
+	padding: 11px 8px;
+	flex-basis: 300px;
+	border-radius: 2px;
+}
+
+#email {
+	margin-bottom: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#email::placeholder,
+#password::placeholder {
+	color: #d7d7d7;
+}
+
+#password {
+	margin-bottom: 28px;
+}
+
+#submit {
+	padding: 11px 8px;
+	flex-basis: 300px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	transition: 0.4s ease;
+	background-color: #70b6e2;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+#submit img {
+	position: relative;
+	top: 2px;
+	right: 7px;
+}
+
+#submit:hover {
+	background-color: #9cd7fd;
+}
+
+/* Media */
+
+@media only screen and (max-width: 662px) {
+	body {
+		padding: 0 3px;
+	}
+
+	.greet,
+	.registration {
+		flex-basis: 100%;
+	}
+
+	.greet {
+		height: 300px;
+		border-radius: 2px;
+	}
+
+	.greet::after {
+  		content: "";
+  		background: #005c8a url(../img/abstract.png) no-repeat center -450px;
+  		opacity: 0.6;
+  		top: 0;
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+  		position: absolute;
+  		z-index: -1;
+  		border-top-left-radius: 3px;
+  		border-bottom-left-radius: 3px;
+	}
+
+	.registration {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-radius: 2px;
+	}
+
+	.form-wrap {
+		flex-wrap: wrap;
+	}
+}
+
+
